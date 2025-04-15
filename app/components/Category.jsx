@@ -28,7 +28,7 @@ export default function Category() {
 
   return (
     <div className="mt-[35px] border border-black">
-      <h2 className="text-[#FFF] bg-[#1FA45B] py-[18px] w-[439px] text-center rounded-t-[10px]">
+      <h2 className="text-[#FFF] bg-[#1FA45B] py-[18px] w-[439px] text-center rounded-t-[10px] font-inter">
         Categories
       </h2>
       <div className="flex gap-[10px] border border-[#E2E2E2] px-[13px] h-[50px] m-[15px] rounded-[7px]">

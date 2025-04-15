@@ -12,7 +12,7 @@ import Logo from "../assets/unnamed 1.svg";
 export default function Sidebar() {
   return (
     <div className="text-black ">
-      <div className="bg-[#FFFFFF]  h-[927px] w-[100px] rounded-[24px] ml-10 flex flex-col items-center">
+      <div className="bg-[#FFFFFF]  h-[927px] w-[100px] rounded-[24px] flex flex-col items-center">
         <a href="#">
           <Image
             src={Logo}

@@ -1,6 +1,5 @@
 import Category from "./components/Category";
 import DuaSection from "./components/DuaSection";
-import Header from "./share/Header";
 import Sidebar from "./share/Sidebar";
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
         <Category />
       </div>
       <div className="border-2 border-red-500 max-w-[890px] ml-[632px] ">
-        <Header/>
       <DuaSection />
       </div>
  {/* <div className="fixed top-10 right-10">

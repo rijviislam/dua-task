@@ -5,8 +5,10 @@ import Profile from "../assets/Vector.svg";
 
 export default function Header() {
   return (
-    <div className="flex mt-[54px] w-full justify-between">
-      <h1 className="text-2xl font-semibold text-[#393939] ">Dua Page</h1>
+    <div className="flex  w-full justify-between ml-[170px] mt-10">
+      <h1 className="text-2xl font-semibold text-[#393939] font-poppins">
+        Dua Page
+      </h1>
       <div className="flex gap-[293px]">
         <div className="text-[#868686] font-normal text-[16px] flex border border-[#E2E2E2] bg-[#FFF] pl-4 pr-1 w-[371px] justify-between">
           <input type="text" placeholder="Search by Dua Name" />

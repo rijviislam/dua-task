@@ -33,7 +33,12 @@ export default function DuaSection() {
   console.log("Dua", dua);
   return (
     <div className="border border-red-500 w-full ">
-      <h2 className="py-[10px] px-[30px]">Section:</h2>
+      <h2 className="py-[10px] px-[30px] text-[#1FA45B] font-inter font-semibold text-[16px]">
+        Section:{" "}
+        <span className="text-[#393939] font-medium">
+          The servant is dependent on his Lord
+        </span>
+      </h2>
       <div className="border border-green-500 px-4 py-2">
         <div className="flex flex-col gap-[10px]">
           {dua?.map((item, idx) => (
@@ -41,16 +46,23 @@ export default function DuaSection() {
               className="flex flex-col px-[30px] py-[15px] border border-black"
               key={idx}
             >
-              <div className="flex">
+              <div className="flex gap-[10px]">
                 <Image src={DuaLogo} alt="Dua" width={35} height={35} />
-                <h3 key={idx} className="text-[#1FA45B] py-1">
+                <h3
+                  key={idx}
+                  className="text-[#1FA45B] font-inter font-semibold text-[16px] py-1"
+                >
                   {item.dua_name_en}
                 </h3>
               </div>
-              <p>{item.top_en}</p>
-              <p className="text-right py-[28px]">{item.dua_arabic}</p>
+              <p className=" mt-7 text-[16px] text-[#393939] font-normal font-inter">
+                {item.top_en}
+              </p>
+              <p className="text-right py-[28px] font-normal text-[16px] text-[#393939]">
+                {item.dua_arabic}
+              </p>
               {item?.translation_en && item?.transliteration_en && (
-                <div className="mt-2">
+                <div className="mt-2 font-inter text-[16px] font-normal text-[#393939]">
                   <p>
                     <span className="font-semibold">Translation: </span>
                     {item.translation_en}
@@ -61,7 +73,11 @@ export default function DuaSection() {
                   </p>
                 </div>
               )}
-              <p className="mt-[28px]">{item.refference_en}</p>
+              <p className="mt-[28px] font-inter text-[16px] font-medium text-[#393939]">
+                {" "}
+                <span className="text-[#1FA45B]">Reference</span>{" "}
+                {item.refference_en}
+              </p>
               <div className="flex justify-between items-center">
                 <div className="mt-2">
                   <p className="font-semibold">Audio:</p>
