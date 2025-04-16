@@ -32,18 +32,18 @@ export default function DuaSection() {
   if (loading) return <p>Loading categories...</p>;
   console.log("Dua", dua);
   return (
-    <div className="border border-red-500 w-full ">
+    <div className="mt-16 w-full ">
       <h2 className="py-[10px] px-[30px] text-[#1FA45B] font-inter font-semibold text-[16px]">
         Section:{" "}
         <span className="text-[#393939] font-medium">
           The servant is dependent on his Lord
         </span>
       </h2>
-      <div className="border border-green-500 px-4 py-2">
+      <div className=" px-4 py-2">
         <div className="flex flex-col gap-[10px]">
           {dua?.map((item, idx) => (
             <div
-              className="flex flex-col px-[30px] py-[15px] border border-black"
+              className="flex flex-col px-[30px] py-[15px] border-[0.5px] border-[#E2E2E2] bg-[#FFF] rounded-[10px]"
               key={idx}
             >
               <div className="flex gap-[10px]">
